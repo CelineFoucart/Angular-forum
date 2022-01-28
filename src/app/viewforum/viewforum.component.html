@@ -1,0 +1,16 @@
+<div class="alert alert-danger" *ngIf="notFound; else found">
+    <h2>Erreur 404</h2>
+    <p>Ce forum n'existe pas</p>
+</div>
+<ng-template #found>
+    <h2>{{ forum.title }}</h2>
+    <section class="rounded-3 p-2 forum-section">
+        <h3 class="section-title">Sujets</h3>
+        <article class="forum-row bg-default" *ngFor="let topic of topics">
+            <h3 class="forum-row-title">
+                <a href="#">{{topic.title}}</a>
+            </h3>
+            <p class="forum-description">Publié par <span class="fw-bold">{{ topic.author }}</span></p>
+        </article>
+    </section>
+</ng-template>

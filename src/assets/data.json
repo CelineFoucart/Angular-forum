@@ -1,0 +1,64 @@
+{
+    "categories": [
+        {
+            "id":1,
+            "title":"Accueil"
+        },
+        {
+            "id":2,
+            "title":"Causeries diverses"
+        }
+    ],
+    "forums": [
+        {
+            "id": 1,
+            "title": "Annonce du forum",
+            "description": "Pour voir les annonces et suivre l'actualité",
+            "parentId": 1 
+        },
+        {
+            "id": 2,
+            "title": "Venez vous présentez",
+            "description": "Où les habitants se présentent et se souhaitent la bienvenue...",
+            "parentId": 1 
+        },
+        {
+            "id": 3,
+            "title": "Présentation du forum et questions",
+            "description": "Pour tout comprendre sur le forum",
+            "parentId": 1 
+        },
+        {
+            "id": 4,
+            "title": "Discussions diverses",
+            "description": "Où les habitants parlent de tout et de rien",
+            "parentId": 2 
+        },
+        {
+            "id": 5,
+            "title": "Rencontres IRL",
+            "description": "Forum pour préparer et parler des rencontres in ze real world",
+            "parentId": 2 
+        }
+    ],
+    "topics": [
+        {
+            "id":1,
+            "title":"lorem ipsum",
+            "parentId": 1,
+            "author": "Ermina"
+        },
+        {
+            "id":2,
+            "title":"sit amet",
+            "parentId": 1,
+            "author": "Ermina"
+        },
+        {
+            "id":3,
+            "title":"dolorem",
+            "parentId": 2,
+            "author": "Ermina"
+        }
+    ]
+}
